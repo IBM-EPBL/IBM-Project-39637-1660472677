@@ -1,0 +1,12 @@
+import random 
+import time 
+while (1): 
+ temperature= random.randint(0, 100) 
+ humidity= random.randint(0, 100) 
+ #Assume temperature threshold as 50
+ #Assume humidity threshold as 40
+ threshtemperature=50
+ threshhumidity=40
+ if temp>threshtemperature or humi> threshhumidity :
+     print("ALERT!!! Detected temperature is: "+str(temperature)+"°C, Detected Humidity is: "+str(humidity)) 
+ time.sleep(1)
